@@ -5,7 +5,7 @@ from app.db.session import AsyncSessionLocal
 from app.schemas.auth import RegisterRequest, LoginRequest, TokenResponse
 from app.services.auth_service import AuthService
 
-router = APIRouter(prefix="/auth", tags=["Auth"])
+router = APIRouter(tags=["Auth"])
 
 
 async def get_db():

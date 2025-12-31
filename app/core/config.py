@@ -3,6 +3,7 @@ from functools import lru_cache
 
 
 class Settings(BaseSettings):
+    DATABASE_URL: str
     app_name: str = "Doctor Appointment API"
     env: str = "development"
 
